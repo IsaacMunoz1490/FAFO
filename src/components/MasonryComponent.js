@@ -1,37 +1,35 @@
-import './MasonryComponent.css';
+import React from 'react';
 
+function MasonryComponent(props) {
+    return(
+        <div style={{
+            ...styles.pin,
+            ...styles[props.size]
+        }}>
+            
 
-function Tiles() {
-    return (
-        <div className="website">
-            <div className="header">
-                <div className="logo"> </div>
-            </div>
-            <div className="grid">
-                <div className="item">1</div>
-                <div className="item">2</div>
-                <div className="item">3</div>
-                <div className="item">4</div>
-                <div className="item">5</div>
-                <div className="item">6</div>
-            </div>
         </div>
-    );
+    )
 }
-// Masonry Grid
-(".grid").masonry({
-    itemSelector: ".item",
-    columnWidth: 160,
-    gutter: 10
-});
 
-(".item").each(function (i) {
-    setTimeout(function () {
-        (".item").eq(i).addClass("is-visible");
-    }, 200 * i);
-});
+const styles = {
+    pin: {
+        margin: '15px 10px',
+        padding: 0,
+        border: '16px',
+        backgroundColor: "white"
+    },
+    small: {
+        gridRowEnd: 'span 26'
+    },
+    medium: {
+        gridRowEnd: ' span 33'
+    },
+    large: {
+        gridRowEnd: 'span 45'
+    },
+}
 
-export default Tiles;
-
+export default MasonryComponent;
 
 

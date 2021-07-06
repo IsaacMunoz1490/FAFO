@@ -1,13 +1,12 @@
 import React from 'react';
 import Header from '../components/HeaderComponent';
-import Tiles from '../components/MasonryComponent';
-
+import MasonryLayout from '../components/MasonryLayout.js';
 
 function Home () {
     return (
         <React.Fragment>
             <Header />
-            <Tiles />
+            <MasonryLayout />
         </React.Fragment>
     )
 }
