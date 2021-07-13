@@ -16,11 +16,11 @@ const styles = {
     pin: {
         margin: '15px 10px',
         padding: 0,
-        border: '16px',
+        borderRadius: '10px',
         backgroundColor: "white"
     },
     small: {
-        gridRowEnd: 'span 26'
+        gridRowEnd: 'span 25'
     },
     medium: {
         gridRowEnd: ' span 33'
@@ -32,4 +32,4 @@ const styles = {
 
 export default MasonryComponent;
 
-
+//this is being passed to the Masonry Layout and then rendered at home.js

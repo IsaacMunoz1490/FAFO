@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Header from '../components/HeaderComponent';
 import MasonryLayout from '../components/MasonryLayout.js';
+import Footer from '../components/FooterComponent';
 
-function Home () {
-    return (
-        <React.Fragment>
-            <Header />
+
+class Main extends Component {
+    render() {
+        return (
+            <>
+            <Header/>
             <MasonryLayout />
-        </React.Fragment>
-    )
+            <Footer />
+            </>
+        );
+    }
 }
-export default Home;
+export default Main;
 
 // We are going to bring everything to the HOME page. //
