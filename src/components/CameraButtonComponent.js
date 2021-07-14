@@ -2,14 +2,14 @@ import { Button, ButtonGroup } from 'reactstrap';
 
 
 
-const CenterButton = (props) => {
+const CameraButton = (props) => {
     return (
         
             <ButtonGroup>
-                <Button className="btn btn-lg"  id="circle" >
-                    Click
+                <Button className="btn btn-lg"  id="camera" >
+                    Camera
                 </Button>
             </ButtonGroup>
     );
 }
-export default CenterButton;
+export default CameraButton;

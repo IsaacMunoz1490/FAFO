@@ -6,6 +6,9 @@ function getResponseStyles(width) {
     if (width <= 375) {
         return styles.mobile
     }
+    if (width <= 425) {
+        return styles.mobileLg
+    }
     if (width > 375 && width <= 1024) {
         return styles.tablet
     }
@@ -51,6 +54,10 @@ const styles = {
         ...commonStyles
     },
     mobile : {
+        ...commonStyles,
+        gridTemplateColumns: 'repeat(auto-fill, 150px)',
+    },
+    mobileLg : {
         ...commonStyles,
         gridTemplateColumns: 'repeat(auto-fill, 150px)',
     }

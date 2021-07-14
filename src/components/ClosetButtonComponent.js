@@ -2,14 +2,14 @@ import { Button, ButtonGroup } from 'reactstrap';
 
 
 
-const CenterButton = (props) => {
+const ClosetButton = (props) => {
     return (
         
             <ButtonGroup>
-                <Button className="btn btn-lg"  id="circle" >
-                    Click
+                <Button className="btn btn-lg"  id="closet" >
+                    Closet
                 </Button>
             </ButtonGroup>
     );
 }
-export default CenterButton;
+export default ClosetButton;
