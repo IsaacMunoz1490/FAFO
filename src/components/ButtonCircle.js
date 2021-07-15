@@ -6,8 +6,8 @@ const CenterButton = (props) => {
     return (
         
             <ButtonGroup>
-                <Button className="btn btn-lg"  id="circle" >
-                    Click
+                <Button id="circle" >
+                    <a href="/#">72</a>
                 </Button>
             </ButtonGroup>
     );

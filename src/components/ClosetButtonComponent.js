@@ -6,8 +6,8 @@ const ClosetButton = (props) => {
     return (
         
             <ButtonGroup>
-                <Button className="btn btn-lg"  id="closet" >
-                    Closet
+                <Button id="closet" text-decoration="none" >
+                    <a href="/#"><i className="fa fa-tags"></i></a>
                 </Button>
             </ButtonGroup>
     );

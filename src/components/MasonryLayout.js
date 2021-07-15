@@ -6,7 +6,7 @@ function getResponseStyles(width) {
     if (width <= 375) {
         return styles.mobile
     }
-    if (width <= 425) {
+    if (width > 375 && width <= 642) {
         return styles.mobileLg
     }
     if (width > 375 && width <= 1024) {
@@ -42,8 +42,8 @@ const commonStyles = {
     left: '50%',
     transform: 'translateX(-50%)',
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, 250px)',
-    gridAutoRows: '10px',
+    gridTemplateColumns: 'repeat(auto-fill, 200px)',
+    gridAutoRows: '9px',
     justifyContent: 'center'
 }
 const styles = {
@@ -58,8 +58,8 @@ const styles = {
         gridTemplateColumns: 'repeat(auto-fill, 150px)',
     },
     mobileLg : {
-        ...commonStyles,
-        gridTemplateColumns: 'repeat(auto-fill, 150px)',
+        ...commonStyles,        
+
     }
 }
 

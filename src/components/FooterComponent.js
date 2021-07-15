@@ -7,20 +7,21 @@ import CameraButton from './CameraButtonComponent';
 
 function Footer(props) {
     return (
-        <footer className="site-footer">
-            <div className="container ml-1"> 
+        <footer className="site-footer ">
+            <div className="container">
                 <div className="row">
+                    <div className="col" id="cmndTile">
                     <ClosetButton />
-                    <div className="col">
-                      {/*this is where the other buttons are going to be inserted.  */}
-                        <CenterButton />
-                        
-                    </div>
-                    <CameraButton />
 
+                    <CenterButton />
+
+
+                    <CameraButton />
+                    </div>
                 </div>
             </div>
-        </footer>
+           
+        </footer >
     );
 }
 
